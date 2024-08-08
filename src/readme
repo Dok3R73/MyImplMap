@@ -1,0 +1,43 @@
+Это моя версия реализации Map.
+Реализация предоставляет функциональность для хранения и доступа к данным по ключу.
+
+Создание объекта Map:
+    Map<K, V> map = new MyImplMap<>();
+
+Получение размера Map:
+    int size = map.size();
+
+Проверка, является ли Map пустой:
+    boolean isEmpty = map.isEmpty();
+
+Проверка наличия ключа в Map:
+    boolean containsKey = map.containsKey(key);
+
+Проверка наличия значения в Map:
+    boolean containsValue = map.containsValue(value);
+
+Получение значения по ключу:
+    V value = map.get(key);
+
+Добавление элемента в Map:
+    V oldValue = map.put(key, value);
+
+Удаление элемента из Map:
+    V removedValue = map.remove(key);
+
+Добавление всех элементов из другой Map:
+    map.putAll(otherMap);
+
+Очистка Map:
+    map.clear();
+
+Получение множества ключей:
+    Set<K> keySet = map.keySet();
+
+Получение коллекции значений:
+    Collection<V> values = map.values();
+
+Получение множества записей (пар ключ-значение):
+    Set<Map.Entry<K, V>> entrySet = map.entrySet();
+
+Используемый стек JDK 11, JUnit 5, Maven.
